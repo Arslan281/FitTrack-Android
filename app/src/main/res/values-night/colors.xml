@@ -1,0 +1,8 @@
+
+<resources>
+    <color name="fit_background">#101827</color>
+    <color name="fit_card">#1E293B</color>
+    <color name="fit_text">#FFFFFF</color>
+    <color name="fit_primary">#90CAF9</color>
+    <color name="fit_hint">#777777</color>
+</resources>

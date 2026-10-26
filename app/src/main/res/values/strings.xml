@@ -1,0 +1,8 @@
+
+<resources>
+    <string name="app_name">FitTrack</string>
+    <string name="fittrack_title">FitTrack</string>
+    <string name="dashboard_welcome">Welcome to your fitness dashboard!</string>
+    <string name="profile_title">My Profile</string>
+    <string name="workout_title">Today\'s Workout</string>
+</resources>

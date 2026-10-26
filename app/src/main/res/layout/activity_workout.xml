@@ -1,0 +1,157 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's Workout"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/fit_primary"
+            android:gravity="center"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Every rep counts!"
+            android:textSize="16sp"
+            android:textColor="@color/fit_text"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Exercise"
+            android:textColor="@color/fit_text"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:id="@+id/exerciseGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <RadioButton
+                android:id="@+id/pushupRadio"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Push-ups"
+                android:textColor="@color/fit_text"
+                android:buttonTint="@color/fit_primary"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/squatRadio"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Squats"
+                android:textColor="@color/fit_text"
+                android:buttonTint="@color/fit_primary"/>
+
+            <RadioButton
+                android:id="@+id/plankRadio"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Plank"
+                android:textColor="@color/fit_text"
+                android:buttonTint="@color/fit_primary"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="25dp"
+            android:background="@color/fit_card"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/exerciseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Push-ups"
+                android:textColor="@color/fit_text"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/exerciseDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 repetitions per set"
+                android:textSize="15sp"
+                android:textColor="@color/fit_text"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 / 5 Sets"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/fit_primary"
+                android:layout_marginTop="25dp"/>
+
+            <ProgressBar
+                android:id="@+id/workoutProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:max="5"
+                android:progress="0"
+                android:progressTint="@color/fit_primary"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/completeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complete Set"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1976D2"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/resetWorkoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Workout"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#64748B"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/backDashboardButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Dashboard"
+            android:textColor="@color/fit_text"
+            android:backgroundTint="@color/fit_card"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
